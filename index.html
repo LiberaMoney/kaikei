@@ -293,6 +293,17 @@ footer { background:var(--ink); color:#fff; text-align:center; padding:38px 22px
 #contact .cta-btn:hover{background:var(--white);border-color:var(--red-deep);color:var(--red-deep);box-shadow:none;transform:none}
 footer .foot-tag,footer .foot-copy{color:#fff}
 
+
+/* ===== CUSTOMER VOICES ===== */
+.voices { padding:64px 0; background:var(--cream); }
+.voices-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin-top:28px; }
+.voice-card { min-width:0; display:flex; flex-direction:column; background:var(--white); border:1px solid var(--line); border-top:4px solid var(--red); border-radius:8px; padding:26px 24px; }
+.voice-title { font-family:'Shippori Mincho',serif; font-weight:800; font-size:clamp(17px,4.2vw,20px); line-height:1.7; margin-bottom:16px; color:var(--ink); overflow-wrap:anywhere; }
+.voice-text { margin:0; font-size:14px; line-height:2; color:var(--ink-soft); overflow-wrap:anywhere; }
+.voice-meta { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-top:auto; padding-top:22px; }
+.voice-attribute { font-size:12px; font-weight:700; color:var(--red-deep); }
+.voice-note { font-size:11px; color:var(--ink-soft); }
+@media(max-width:680px){ .voices-grid { grid-template-columns:1fr; gap:16px; } .voice-card { padding:22px 20px; } }
 </style>
 </head>
 <body>
@@ -598,6 +609,36 @@ footer .foot-tag,footer .foot-copy{color:#fff}
       <div class="sw-pill rv">弥生会計</div>
       <div class="sw-pill rv">freee</div>
       <div class="sw-pill rv">マネーフォワード</div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMER VOICES -->
+<section class="voices" id="voices" aria-labelledby="voices-title">
+  <div class="wrap">
+    <p class="eyebrow">VOICE</p>
+    <h2 class="sec-head" id="voices-title">お客様の声</h2>
+    <div class="voices-grid">
+      <article class="voice-card" aria-labelledby="voice-title-1">
+        <h3 class="voice-title" id="voice-title-1">「不明なことも、すぐに調べてくれる」</h3>
+        <blockquote class="voice-text"><p>何を聞いてもちゃんと答えてもらえて、不明なことはすぐに調べて解決してくれます！</p></blockquote>
+        <div class="voice-meta"><p class="voice-attribute">30代／開業2年目</p><p class="voice-note">※感想より一部抜粋</p></div>
+      </article>
+      <article class="voice-card" aria-labelledby="voice-title-2">
+        <h3 class="voice-title" id="voice-title-2">「早く相談すればよかった！」</h3>
+        <blockquote class="voice-text"><p>リアルでお会いしたのは1度だけでしたが、何年も前から知り合いのような親しみやすさ。<br>悩んでいる時間がもったいない！<br>早く相談すればよかった！</p></blockquote>
+        <div class="voice-meta"><p class="voice-attribute">50代／自営業</p></div>
+      </article>
+      <article class="voice-card" aria-labelledby="voice-title-3">
+        <h3 class="voice-title" id="voice-title-3">「毎月の数字を把握し、意識できるように」</h3>
+        <blockquote class="voice-text"><p>今まで、税理士に丸投げしており、会計の知識はゼロ。経理をする時間もなく、後回しになっていました。<br>資料提出のリマインドもいただけて、月次で数字を把握し、意識できるようになりました。</p></blockquote>
+        <div class="voice-meta"><p class="voice-attribute">40代／自営業</p></div>
+      </article>
+      <article class="voice-card" aria-labelledby="voice-title-4">
+        <h3 class="voice-title" id="voice-title-4">「苦手な事務を教わり、自分の作業に集中」</h3>
+        <blockquote class="voice-text"><p>やりたいことはあるけど、右も左も分からなかったので、苦手な事務を教えていただき、自分の作業に集中できました。</p></blockquote>
+        <div class="voice-meta"><p class="voice-attribute">50代／開業時の事務サポート</p></div>
+      </article>
     </div>
   </div>
 </section>
